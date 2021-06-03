@@ -3,46 +3,30 @@
 
 
 from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
-#导入包
+
 
 class TestCaseRegsiter(HttpRunner):
 
-    # 配置
-    config = (
-        Config("testcase description") #对应yaml中name，之后的关键字需要加点
-        #base_url
-        .base_url("http://123.56.231.107:8000")
-        #参数
-        .variables(
-            **{
-                "a": "1",
-                "b": "2"
-            }
-        )
-        .verify(False)
-    )
-    # 测试步骤
+    config = Config("testcase description").verify(False)
+
     teststeps = [
         Step(
-            RunRequest("/api/register/")# 名称
-            .post("http://123.56.231.107:8000/api/register/") #方法
-            # header
+            RunRequest("/api/register/")
+            .post("http://123.56.231.107:8000/api/register/")
             .with_headers(
                 **{
                     "Content-Type": "application/json",
                     "X-Requested-With": "XMLHttpRequest",
                 }
             )
-            # 参数
             .with_json(
                 {
-                    "account": "test171",
-                    "email": "test1771@123.com",
+                    "account": "test177",
+                    "email": "test1775@123.com",
                     "password": "123123",
                     "repassword": "123123",
                 }
             )
-            #断言
             .validate()
             .assert_equal("status_code", 200)
         ),

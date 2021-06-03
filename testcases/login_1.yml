@@ -1,0 +1,37 @@
+config:
+    name: "登录后关联参数，添加银行卡"
+    variables:
+        p_username: "test11"
+        p_password: "test11"
+    verify: false
+    base_url: "http://localhost:8000"
+
+teststeps:
+-   name: 登录测试用例
+    request:
+        headers:
+            Content-Type: "application/json"
+        json:
+            username: "test11"
+            password: "test11"
+        method: POST
+        url: /api/v1/login/
+    extract:
+        token: content.token
+    validate:
+    -   eq: ["status_code",200]
+    -   eq: ["content.msg","登录成功"]
+
+-   name: 添加卡信息关联token
+    request:
+        headers:
+            Content-Type: "application/json"
+            Authorization: "Token $token"
+        json:
+            card_id: "test11"
+            card_user: "test11"
+        method: POST
+        url: /cards/
+    validate:
+    -   eq: ["status_code",201]
+    -   eq: ["content.card_id","test11"]

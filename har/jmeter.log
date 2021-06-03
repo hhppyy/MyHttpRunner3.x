@@ -1,0 +1,68 @@
+2021-06-03 15:26:57,552 INFO o.a.j.u.JMeterUtils: Setting Locale to zh_CN
+2021-06-03 15:26:57,724 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.1.1\bin\user.properties
+2021-06-03 15:26:57,731 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.1.1\bin\system.properties
+2021-06-03 15:26:57,786 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2021-06-03 15:26:57,787 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2021-06-03 15:26:57,788 INFO o.a.j.JMeter: java.version=14.0.2
+2021-06-03 15:26:57,788 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-06-03 15:26:57,789 INFO o.a.j.JMeter: os.name=Windows 7
+2021-06-03 15:26:57,789 INFO o.a.j.JMeter: os.arch=amd64
+2021-06-03 15:26:57,790 INFO o.a.j.JMeter: os.version=6.1
+2021-06-03 15:26:57,791 INFO o.a.j.JMeter: file.encoding=GBK
+2021-06-03 15:26:57,791 INFO o.a.j.JMeter: java.awt.headless=null
+2021-06-03 15:26:57,792 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-06-03 15:26:57,793 INFO o.a.j.JMeter: Available Processors =8
+2021-06-03 15:26:57,844 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-06-03 15:26:57,845 INFO o.a.j.JMeter: JMeter  Locale=Chinese (China)
+2021-06-03 15:26:57,846 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.1.1
+2021-06-03 15:26:57,846 INFO o.a.j.JMeter: user.dir  =E:\MyHttpRunner3.x\har
+2021-06-03 15:26:57,847 INFO o.a.j.JMeter: PWD       =E:\MyHttpRunner3.x\har
+2021-06-03 15:26:57,849 INFO o.a.j.JMeter: IP: 192.168.0.54 Name: PC-20200907TTND FullName: PC-20200907TTND
+2021-06-03 15:27:00,211 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2021-06-03 15:27:00,250 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: javax.swing.plaf.nimbus.NimbusLookAndFeel [Darcula]
+2021-06-03 15:27:00,251 INFO o.a.j.JMeter: Setting LAF to: javax.swing.plaf.nimbus.NimbusLookAndFeel
+2021-06-03 15:27:00,735 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-06-03 15:27:05,442 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_7-b28ae5eac01c36e2903ab60aa6af81c4-gui
+2021-06-03 15:27:20,614 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-03 15:27:20,617 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-03 15:27:20,617 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-03 15:27:20,618 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-03 15:27:20,619 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-06-03 15:27:20,619 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-06-03 15:27:22,965 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2021-06-03 15:27:22,966 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file D:\apache-jmeter-5.1.1\bin\proxyserver.jks
+2021-06-03 15:27:23,209 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, jpgc-functions=2.1, jpgc-casutg=2.9, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-perfmon=2.1, jpgc-plugins-manager=1.6, jpgc-tst=2.5, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1, jpgc-standard=2.0]
+2021-06-03 15:27:23,482 INFO o.a.j.s.FileServer: Default base='E:\MyHttpRunner3.x\har'
+2021-06-03 15:27:25,983 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-06-03 15:27:25,984 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2021-06-03 15:27:25,984 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-06-03 15:27:25,985 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-06-03 15:27:26,037 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-06-03 15:27:42,425 INFO o.a.j.g.a.Load: Loading file: F:\jmeter\登录xadmin.jmx
+2021-06-03 15:27:42,426 INFO o.a.j.s.FileServer: Set new base='F:\jmeter'
+2021-06-03 15:27:43,090 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-06-03 15:27:43,148 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-06-03 15:27:43,154 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-06-03 15:27:43,159 INFO o.a.j.s.SaveService: Loading file: F:\jmeter\登录xadmin.jmx
+2021-06-03 15:27:43,764 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2021-06-03 15:27:44,041 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-06-03 15:27:44,203 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-06-03 15:27:44,307 INFO o.a.j.s.FileServer: Set new base='F:\jmeter'
+2021-06-03 15:30:07,827 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-06-03 15:30:07,832 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-06-03 15:30:07,833 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-06-03 15:30:07,838 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-06-03 15:30:07,839 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-06-03 15:30:09,042 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-06-03 15:30:09,218 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 线程组
+2021-06-03 15:30:09,219 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group 线程组.
+2021-06-03 15:30:09,220 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-06-03 15:30:09,221 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2021-06-03 15:30:09,229 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-06-03 15:30:09,229 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-06-03 15:30:09,236 INFO o.a.j.t.JMeterThread: Thread started: 线程组 1-1
+2021-06-03 15:30:09,273 INFO o.a.j.p.h.s.HTTPJavaImpl: Maximum connection retries = 0
+2021-06-03 15:30:13,309 INFO o.a.j.t.JMeterThread: Thread is done: 线程组 1-1
+2021-06-03 15:30:13,310 INFO o.a.j.t.JMeterThread: Thread finished: 线程组 1-1
+2021-06-03 15:30:13,311 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-06-03 15:30:13,312 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)

@@ -1,0 +1,24 @@
+config:
+    name: 登录测试
+    variables:
+        p_username: test200
+        p_password: 123123
+    verify: false
+    base_url: http://123.56.231.107:8000
+
+teststeps:
+-   name: 登录测试用例
+    request:
+        headers:
+            Content-Type: "application/json"
+            X-Requested-With: "XMLHttpRequest"
+        json:
+            account: $p_username
+            email: $p_username@123.com
+            password: $p_password
+            repassword: $p_password
+        method: POST
+        url: /api/register/
+    validate:
+    -   eq: [status_code,200]
+

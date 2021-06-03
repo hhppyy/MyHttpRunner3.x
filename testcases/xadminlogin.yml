@@ -1,0 +1,36 @@
+config:
+    name: "xadmin登录"
+    verify: false
+    base_url: ${ENV(BASE_URL1)}
+
+teststeps:
+-   name: 访问登录页面获取token
+    request:
+        method: GET
+        url: /xadmin/
+    extract:
+        csrfmiddlewaretoken: body
+        cookieValue: headers.Cookie
+    validate:
+    -   eq: ["status_code",200]
+
+
+-   name: 关联token并进行登录
+    request:
+        headers:
+            Content-Type: "application/x-www-form-urlencoded"
+            cookie: $cookieValue
+        data:
+            csrfmiddlewaretoken: "${re_body($csrfmiddlewaretoken)}"
+            username: "admin"
+            password: "han010657"
+            this_is_the_login_form: 1
+            next: "/xadmin/"
+        method: POST
+        url: /xadmin/
+        extract :
+            bodyvalue: body
+        allow_redirects: True
+    validate:
+    -   eq: ["status_code",302]
+    -   eq: ["${reg_req_body($bodyvalue)}",'欢迎，admin']

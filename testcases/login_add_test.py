@@ -40,6 +40,7 @@ class TestCaseRegsiter(HttpRunner):
                 }
             )
             .extract()
+
             .with_jmespath("body.token",'token')
             #断言
             .validate()
