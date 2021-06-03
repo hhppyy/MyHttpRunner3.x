@@ -1,0 +1,21 @@
+config:
+    name: testcase description
+    variables: {}
+    verify: false
+teststeps:
+-   name: /api/register/
+    request:
+        headers:
+            Content-Type: application/json
+            X-Requested-With: XMLHttpRequest
+        json:
+            account: test177
+            email: test1775@123.com
+            password: '123123'
+            repassword: '123123'
+        method: POST
+        url: http://123.56.231.107:8000/api/register/
+    validate:
+    -   eq:
+        - status_code
+        - 200
