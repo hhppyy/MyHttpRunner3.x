@@ -7,14 +7,14 @@ from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 class TestCaseXadminlogin(HttpRunner):
 
-    config = Config("xadmin登录").base_url("${ENV(BASE_URL1)}").verify(False)
+    config = Config("xadmin登录").base_url("${ENV(BASE_URL)}").verify(False)
 
     teststeps = [
         Step(
             RunRequest("访问登录页面获取token")
             .get("/xadmin/")
             .extract()
-            .with_jmespath("body", "csrfmiddlewaretoken")
+            .with_jmespath("body", "body")
             .with_jmespath("headers.Cookie", "cookieValue")
             .validate()
             .assert_equal("status_code", 200)
@@ -30,17 +30,20 @@ class TestCaseXadminlogin(HttpRunner):
             )
             .with_data(
                 {
-                    "csrfmiddlewaretoken": "${re_body($csrfmiddlewaretoken)}",
+                    "csrfmiddlewaretoken": "${re_body($body)}",
                     "username": "admin",
                     "password": "han010657",
                     "this_is_the_login_form": 1,
                     "next": "/xadmin/",
                 }
             )
-            .set_allow_redirects(False)
+            # .set_allow_redirects(False)
+            .extract()
+            .with_jmespath("body","body1")
             .validate()
 
             .assert_equal("${reg_req_body($bodyvalue)}", "欢迎，admin")
+            .assert_equal("status_code", 200)
         ),
     ]
 

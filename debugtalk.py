@@ -1,5 +1,7 @@
 import time
 import re
+from lxml import etree
+
 from httprunner import __version__
 
 
@@ -22,5 +24,6 @@ def reg_req_body(responseBody):
     return req
 
 def re_body(body):
-    req = re.findall("value='(.*?)' />",body.decode())
-    return req
+    req = etree.HTML(body)
+    body = req.xpath(".//*[@name='csrfmiddlewaretoken']/@value")
+    return body

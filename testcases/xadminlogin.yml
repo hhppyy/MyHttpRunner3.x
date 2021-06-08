@@ -1,7 +1,7 @@
 config:
     name: "xadmin登录"
     verify: false
-    base_url: ${ENV(BASE_URL1)}
+    base_url: ${ENV(BASE_URL)}
 
 teststeps:
 -   name: 访问登录页面获取token
@@ -30,7 +30,7 @@ teststeps:
         url: /xadmin/
         extract :
             bodyvalue: body
-        allow_redirects: True
+        allow_redirects: False
     validate:
     -   eq: ["status_code",302]
     -   eq: ["${reg_req_body($bodyvalue)}",'欢迎，admin']
